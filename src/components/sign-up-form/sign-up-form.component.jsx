@@ -1,8 +1,6 @@
 import { useState } from "react";
-
 import FormInput from "../form-input/form-input.component";
 import Button from "../button/button.component";
-
 import "./sign-up-form.styles.scss";
 import {
   createAuthUserWithEmailAndPassword,
@@ -51,7 +49,6 @@ export const SignUpForm = () => {
 
   const handleChange = (event) => {
     const { name, value } = event.target;
-
     setFormFields({ ...formFields, [name]: value });
   };
 
